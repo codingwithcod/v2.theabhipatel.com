@@ -7,15 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky",
-    "format":"prettier --write"
+    "prepare": "husky"
   },
   "lint-staged": {
-    "*.{json,css,md}": "npm run format"
+    "*.{js,ts,jsx,tsx}": "next lint --fix"
   },
-
-
-
   "dependencies": {
     "next": "14.2.5",
     "react": "^18",
