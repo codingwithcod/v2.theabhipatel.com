@@ -11,8 +11,19 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "TheAbhiPatel | Portfolio",
-  description: "A Full Stack Developer.",
+  metadataBase: new URL(`${process.env.APP_BASE_URL}`),
+  title: {
+    default: "TheAbhiPatel",
+    template: "%s - A Full Stack Developer | Portfolio",
+  },
+  description:
+    "TheAbhiPatel: Turning concepts into functional web experiences from front to back. Explore the portfolio of Abhishek Patel, a full stack developer specializing in creating seamless websites and applications",
+  twitter: {
+    card: "summary_large_image",
+  },
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 export default function RootLayout({
