@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import React, { FC, ReactNode } from "react";
 
 interface IProps {
@@ -5,7 +6,12 @@ interface IProps {
 }
 
 const AppLayout: FC<IProps> = ({ children }) => {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <Footer />
+    </>
+  );
 };
 
 export default AppLayout;
