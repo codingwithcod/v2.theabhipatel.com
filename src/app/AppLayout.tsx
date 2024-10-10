@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import React, { FC, ReactNode } from "react";
 
 interface IProps {
@@ -8,6 +9,7 @@ interface IProps {
 const AppLayout: FC<IProps> = ({ children }) => {
   return (
     <>
+      <Navbar />
       {children}
       <Footer />
     </>
