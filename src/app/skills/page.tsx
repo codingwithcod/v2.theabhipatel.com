@@ -1,5 +1,6 @@
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import { mySkills } from "@/constants/skills";
+import Image from "next/image";
 
 const Skills = () => {
   return (
@@ -12,15 +13,20 @@ const Skills = () => {
       </h1>
 
       {/* ---> Skills */}
-      <div className="mt-5 grid w-full grid-cols-2 gap-5 md:grid-cols-4 lg:grid-cols-5">
+      <div className="grid w-full grid-cols-2 gap-5 py-20 sm:grid-cols-3 sm:gap-10 md:grid-cols-4 xl:grid-cols-5">
         {mySkills.map((skill) => {
           return (
             <Card
               key={skill.name}
-              className="p-2"
+              className="hover p-2 shadow-[0px_0px_0px_1px] duration-1000 hover:shadow-[0px_0px_20px_5px] hover:shadow-blue-600"
             >
               <CardContent className="flex items-center justify-center">
-                {skill?.icon}
+                <Image
+                  src={skill.icon}
+                  alt={skill.name}
+                  height={100}
+                  width={100}
+                />
               </CardContent>
               <CardFooter className="flex justify-center p-0">
                 <CardTitle className="text-center text-xl">
