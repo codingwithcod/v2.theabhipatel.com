@@ -8,7 +8,7 @@ const Home = () => {
           <p className="text-sm tracking-widest">
             &lt; A Full Stack Developer / &gt;
           </p>
-          <h1 className="bg-gradient-to-r from-orange-600 via-orange-500 to-yellow-500 bg-clip-text text-6xl font-extrabold leading-none tracking-wide text-transparent">
+          <h1 className="bg-gradient-to-r from-orange-600 via-orange-500 to-yellow-500 bg-clip-text text-5xl font-extrabold leading-none tracking-wide text-transparent sm:text-6xl">
             The Abhi Patel
           </h1>
           <p className="mt-5 text-3xl tracking-widest">
@@ -28,45 +28,25 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex w-full justify-center gap-5">
+      <div className="hidden w-full justify-center gap-5 md:flex">
         <Link href={"/skills"}>
-          <div className="group flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
-            <p className="text-2xl font-semibold tracking-wider">
-              Skills{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </p>
+          <div className="flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
+            <p className="text-2xl font-semibold tracking-wider">Skills </p>
           </div>
         </Link>
         <Link href={"/projects"}>
-          <div className="group flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
-            <p className="text-2xl font-semibold tracking-wider">
-              Projects{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </p>
+          <div className="flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
+            <p className="text-2xl font-semibold tracking-wider">Projects </p>
           </div>
         </Link>
         <Link href={"/skills"}>
-          <div className="group flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
-            <p className="text-2xl font-semibold tracking-wider">
-              Services{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </p>
+          <div className="flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
+            <p className="text-2xl font-semibold tracking-wider">Services </p>
           </div>
         </Link>
         <Link href={"/about"}>
-          <div className="group flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
-            <p className="text-2xl font-semibold tracking-wider">
-              About Me{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </p>
+          <div className="flex h-20 items-center justify-center rounded-md border bg-muted/40 px-5 hover:bg-muted">
+            <p className="text-2xl font-semibold tracking-wider">About Me </p>
           </div>
         </Link>
       </div>
