@@ -14,7 +14,7 @@ const Footer = () => {
             href={"/"}
             className="text-muted-foreground"
           >
-            Developers Blog
+            TheAbhiPatel
           </Link>
         </div>
 
@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="flex items-center gap-1">
           <FaRegCopyright className="text-sm text-muted-foreground" />
           <p className="text-sm text-muted-foreground">
-            {new Date().getFullYear()} Developers Blog
+            {new Date().getFullYear()} TheAbhiPatel | All rights reserved.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
             href={"/"}
             className="text-muted-foreground"
           >
-            Developers Blog
+            The Abhi Patel
           </Link>
         </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="flex items-center gap-1 border-t border-muted-foreground/20 pt-2">
           <FaRegCopyright className="text-xs text-muted-foreground" />
           <p className="text-xs text-muted-foreground/80">
-            {new Date().getFullYear()} Developers Blog | All rights reserved.
+            {new Date().getFullYear()} TheAbhiPatel | All rights reserved.
           </p>
         </div>
       </div>
